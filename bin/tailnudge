@@ -1,0 +1,13 @@
+#!/usr/bin/env ruby
+
+# -*- mode: ruby; -*-
+
+$LOAD_PATH.unshift(File.expand_path('../../lib', __FILE__))
+
+require "tailnudge"
+
+unless ARGV.empty? || %w(help tail).include?(ARGV[0])
+  ARGV.unshift('tail')
+end
+
+Tailnudge::CLI.start(ARGV)

@@ -1,0 +1,3 @@
+module Tailnudge
+  VERSION = "0.0.1"
+end
